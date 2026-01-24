@@ -11,15 +11,44 @@ main {
     margin: auto;
 }
 
+section.topodotexto {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
 section.topo-da-livrelivro {
     text-align: justify;
 }
 
 .topo-da-livrelivro .txtlivrelivro {
-    margin: 200px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
     padding: 15px;
     color: #351c75;
 }
+
+.txtlivrelivro .vPDF {
+    color: #f11;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #f11;
+    cursor: pointer;
+    width: 110px;
+    height: auto;
+}
+
+.txtlivrelivro .vPDF:hover {
+    color: white;
+    background-color: #f11;
+    transition: 0.2s;
+}
+
 
 .txtlivrelivro h3 {
     color: #351c75;
@@ -38,14 +67,14 @@ section.topo-da-livrelivro {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
     margin-top: 15px;
-    text-indent: 5em;
 }
 
 .txtlivrelivro p.capt {
-    font-weight: 700;
-    text-indent: 5em;
+    font-weight: 1000;
+    font-size: 20px;
     margin-top: 50px;
     margin-bottom: 15px;
+    font-family: "Poppins", sans-serif;
 }
 
 .txtlivrelivro p.citac {
@@ -53,6 +82,33 @@ section.topo-da-livrelivro {
     margin-left: 15rem;
     margin-top: 25px;
     margin-bottom: 25px;
+}
+
+.txtlivrelivro p.corpo {
+    text-indent: 5em;
+}
+
+.txtlivrelivro p.corpo#espaçoacima {
+    border-top: 1px solid #f11;
+    padding-top: 15px;
+    margin-top: 70px;
+    width: 60%;
+}
+
+.txtlivrelivro p.refbiblio {
+    font-size: 90%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #f11;
+}
+
+.txtlivrelivro p.corpo-figura{
+    text-indent: 0;
+}
+
+.txtlivrelivro p.corpo-figura span.italicAUTO {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .txtlivrelivro p.corpo span.refbib {
@@ -66,3 +122,76 @@ section.topo-da-livrelivro {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.txtlivrelivro p.citac span.italicAUTO {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtlivrelivro p.corpo span.bafos {
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.corpodotexto .imagemnotexto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.imagemnotexto img {
+    max-width: 850px;
+}
+
+#viviany {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagemnotexto .overlaytxt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 900;
+    color: white;
+    background-color: #351c75c4;
+    opacity: 0;
+    transition: .2s;
+    backdrop-filter: blur(3px);
+}
+
+.imagemnotexto .overlaytxt2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 900;
+    color: white;
+    background-color: #351c75c4;
+    opacity: 0;
+    transition: .2s;
+    backdrop-filter: blur(3px);
+}
+
+.overlaytxt2:hover {
+    opacity: 1;
+}
+
+.overlaytxt:hover {
+    opacity: 1;
+}
