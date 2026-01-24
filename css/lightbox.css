@@ -1,0 +1,66 @@
+.img-topo-site img {
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease;
+  z-index: 9999;
+}
+
+.popup.ativo {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.containerlightbox {
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#popup-img {
+  max-width: 100%;
+  max-height: calc(90vh - 40px);
+  object-fit: contain;
+}
+
+
+#popup-caption {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 25px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#popup-caption:hover{
+  color: #f11;
+  text-shadow: 0 0 5px rgb(36, 36, 36);
+  transition: 1s;
+}
+
+.fechar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fechar img {
+  width: 28px;
+  height: 28px;
+}

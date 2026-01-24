@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/lightbox.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="imagens/png.ico">
+
+    <title>página inicial .cibernétika</title>
+</head>
+
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html">
+                    <img id="logo-pagina" src="imagens/galeria-cibernetika-header.svg" alt="galeria cibernétika">
+                </a>
+            </div>
+
+            <nav class="menupc">
+                <ul>
+                    <li><a id="começos" href="index.html">começos</a></li>
+                    <li><a id="atividade" href="atividade.html">atividade</a></li>
+                    <li><a id="contato" href="biblioteca.html">biblioteca</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-menumobile" id="btn-menumobile">
+                <img class="botaomenu" src="imagens/list.svg" alt="dado">
+            </div>
+
+            <nav class="menumobile" id="menumobile">
+                <div class="menufechar">
+                    <img id="botaofechar" class="botaofechar" src="imagens/closeicone.svg" alt="xis">
+                </div>
+                <ul>
+                    <li><a id="começos" href="index.html">começos</a></li>
+                    <li><a id="atividade" href="atividade.html">atividade</a></li>
+                    <li><a id="contato" href="biblioteca.html">biblioteca</a></li>
+                </ul>
+            </nav>
+        </div><!--interface-->
+    </header>
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h3>★ arte de combate ★</h3>
+                        <h3><span>★ mídia de guerrilha ★</span></h3>
+                        <p>página de difusão de arte autônoma e revolucionária da artista <span>clorofórmio</span>. este
+                            projeto é construído como meio de socialização das atividades revolucionárias que produzem
+                            novas subjetividades e possibilidades de existir e conspirar - do latim <span>
+                                conspirare</span>: respirar junto.</p>
+                    </div><!--txt-topo-site-->
+                    <div class="img-topo-site">
+                        <img src="imagens/cloroformio.png" alt="série 'primeira ação': sem título">
+                    </div><!--img-topo-site-->
+                    <div class="popup" id="popup">
+                        <span class="fechar">
+                            <img src="imagens/closeiconebranco.svg" alt="">
+                        </span>
+
+                        <div class="containerlightbox">
+                            <img id="popup-img" src="imagens/cloroformio.png">
+                            <p id="popup-caption"> </p>
+                        </div>
+                    </div>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--topo-do-site-->
+
+        <section class="divisoria">
+            <h1>★★★</h1>
+        </section> <!--divisoria-->
+
+        <section class="portfolio">
+            <div class="interface">
+                <h3><span>ação </span>barricada<span class="caret"></span></h3>
+                <div class="flex">
+                    <a href="atividade.html" class="img-port" style="background-image:url(imagens/palestino.png);">
+                        <div class="overlay">primeira ação</div>
+                    </a>
+                    <a href="atividade.html" class="img-port" style="background-image:url(imagens/palestino.png);">
+                        <div class="overlay">segunda ação</div>
+                    </a>
+                    <a href="atividade.html" class="img-port" style="background-image:url(imagens/rolagemhorizontal_mdg.png);">
+                        <div class="overlay">mapeamento de guerrilha</div>
+                    </a>
+                </div><!--flex-->
+            </div><!--interface-->
+        </section><!--portfolio-->
+        <section class="divisoria">
+            <h1>★★★</h1>
+        </section> <!--divisoria-->
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="container-rdp">
+                <div class="flex">
+                    <div class="imp">
+                        <img src="imagens/galeria-cibernetika-header_logocompata_branco.png"
+                            alt="galeria-cibernetika-header_logocompata_branco">
+                    </div><!--logo-->
+
+                    <div class="imp">
+                        <a class="email" href="mailto:galeria.cibernetika@proton.me">galeria.cibernetika@proton.me</a>
+                    </div><!--txt-imp-->
+
+                    <div class="imp">
+                        <p>"o ponto de vista da autonomia sobre esta questão dos meios de comunicação de massa é que cem
+                            flores desabrochem, que cem rádios transmitam" (guattari).</p>
+                    </div><!--txt-imp2-->
+                </div><!--flex-->
+
+                <div class="anticopyright">
+                    <p>anti-copyright <span>©</span> galeria cibernétika, 2026. nenhum direito reservado. viva a
+                        pirataria e o livre acesso!</p>
+                </div>
+            </div><!--container-rdp-->
+        </div><!--interface-->
+    </footer>
+
+    <script src="js/menu_mobile.js"></script>
+    <script src="js/lightbox.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+/* ESTILO GERAL */
+section.topo-da-biblio .interface-bibli {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f11;
+    padding: 50px;
+    margin: 50px 0;
+}
+
+.topo-da-biblio h3#titulo {
+    color: #f11;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.topo-da-biblio h3#titulo span {
+    color: #351c75;
+}
+
+.topo-da-biblio {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex-bibli {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: center;
+    align-items: center;
+    justify-items: left;
+    column-gap: 8rem;
+    text-align: justify;
+    position: relative;
+}
+
+.flex-bibli::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #f11;
+  transform: translateX(-50%);
+}
+
+.flex-bibli a {
+    text-decoration: none;
+    color: #f11;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.flex-bibli .livros span {
+    color: #351c75;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.flex-bibli .livros{
+    transition: all 0.2s ease-in-out;
+}
+
+.flex-bibli .livros:hover{
+    cursor: pointer;
+    scale: 105%;
+    transition: .2s;
+}

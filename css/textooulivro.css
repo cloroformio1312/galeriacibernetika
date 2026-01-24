@@ -1,0 +1,57 @@
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+
+main {
+    max-width: 1280px;
+    margin: auto;
+}
+
+section.topo-da-livrelivro{
+    text-align: justify;
+}
+
+.topo-da-livrelivro .txtlivrelivro {
+    margin: 200px;
+    padding: 15px;
+    text-indent: 2em;
+    color: #f11;
+}
+
+.txtlivrelivro h3{
+    color: #351c75;
+    font-style: italic;
+    font-size: x-large;
+}
+
+.txtlivrelivro h3 span{
+    color: #f11;
+    font-weight: 100;
+    font-style: normal;
+    font-size: large;
+}
+
+.txtlivrelivro p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 25px;
+    margin-top: 15px;
+}
+
+.txtlivrelivro p.capt{
+    font-weight: 700;
+    text-indent: 2em;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.txtlivrelivro p.citac{
+    border-left: 15px solid #f11;
+    font-size: 90%;
+    margin-left: 500px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

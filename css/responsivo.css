@@ -1,0 +1,155 @@
+/*COMEÇO DISPOSITIVOSDIFERENTES*/
+@media screen and (max-width: 1300px) {
+
+    /*CLASSES GERAIS*/
+    .flex {
+        flex-direction: column;
+    }
+
+    /*ESTILO DO MENU*/
+    header {
+        align-items: center;
+    }
+
+    .btn-menumobile {
+        size-adjust: 10px;
+    }
+
+    .menupc {
+        display: none;
+    }
+
+    .btn-menumobile {
+        display: block;
+    }
+
+    .logo #logo-pagina {
+        width: 100%;
+        align-items: center;
+    }
+
+    /*ESTILO TOPO SITE*/
+    section.topo-do-site {
+        padding: 30px 4%;
+    }
+
+    section.topo-do-site .flex {
+        padding: 50px 30px;
+    }
+
+    .topo-do-site .txt-topo-site h3 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .topo-do-site .txt-topo-site p {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 310px;
+        height: auto;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    /*PORTFOLIO*/
+    section.portfolio {
+        padding: 30px 4%;
+    }
+
+    .portfolio .interface {
+        padding: 50px 30px;
+    }
+
+    .porfolio h3 {
+        font-size: 24px;
+        text-align: justify
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    section.portfolio .flex {
+        gap: 50px;
+    }
+
+    .overlay {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    /*RODAPE*/
+    footer .flex {
+        align-items: center;
+    }
+
+
+    /*PAGINA BIBLIOTECA*/
+    section.topo-da-biblio {
+        padding: 30px 4%;
+    }
+
+    .topo-da-biblio h3#titulo {
+        font-size: 24px;
+    }
+
+    .topo-da-biblio .flex-bibli {
+        display: block;
+    }
+
+    .flex-bibli .livros {
+        margin-bottom: 15px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .flex-bibli::before {
+        display: none;
+    }
+
+
+    /*ESTILO ATIVIDADES*/
+
+    .tudoativo {
+        padding: 30px 4%;
+    }
+
+    .tudoativo .interface h3{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .tudoativo p {
+        font-size: 15px;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    .tudoativo .interface {
+        display: block;
+        padding: 50px 30px;
+        margin-bottom: 40px;
+        margin-top: 50px;
+    }
+
+    .interface .tituloedescricao, .flex {
+        margin-bottom: 15px;
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .interface::before {
+        display: none;
+    }
+
+    .img-act {
+        width: 100%;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,351 @@
+#logo-pagina {
+    height: 80px;
+    width: auto;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+/* ESTILO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}
+
+body {
+    background-color: white;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* ESTILO CABEÇALHO */
+header {
+    padding: 25px 4%;
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #f11;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+nav.menupc a {
+    color: #f11;
+    background-color: white;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #f11;
+}
+
+nav.menupc a:hover {
+    color: white;
+    background-color: #f11;
+    border: 3px #f11;
+    border-radius: 100%;
+    transition: 0.2s;
+}
+
+#cloroformio {
+    font-style: italic;
+}
+
+#atividade {
+    font-style: italic;
+}
+
+header nav.menupc ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+/*ESTILO DO MENU MOBILE */
+
+.btn-menumobile {
+    display: none;
+}
+
+.btn-menumobile img {
+    height: 1.4rem;
+    width: auto;
+    margin-top: 10px;
+}
+
+.menufechar img {
+    height: 1.2rem;
+    width: auto;
+    margin-right: 150px;
+}
+
+.menumobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(5px);
+    text-align: right;
+    padding: 30px 0px;
+    border-left: 1px solid #f11;
+    z-index: 999999;
+    pointer-events: none;
+    transition: 0.7s;
+}
+
+.menumobile ul {
+    list-style: none;
+    margin-top: 60px;
+}
+
+.menumobile ul li a {
+    color: #f11;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 15px;
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+.menumobile ul li a:hover {
+    background-color: #f11;
+    color: white;
+    scale: 90%;
+    transition: 0.2s;
+}
+
+.menumobile.abrir-menu {
+    width: 50%;
+    pointer-events: auto;
+}
+
+/*ESTILO DO TOPO DO SITE*/
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f11;
+    padding: 50px;
+}
+
+.topo-do-site .img-topo-site img {
+    width: auto;
+    height: 400px;
+    margin-left: 90px;
+    transition: all 0.2s ease-in-out;
+}
+
+.topo-do-site .img-topo-site img:hover {
+    transform: scale(95%);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.topo-do-site .txt-topo-site {
+    text-align: justify;
+}
+
+.topo-do-site .txt-topo-site h3 {
+    color: #f11;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.topo-do-site .txt-topo-site h3 span {
+    color: #351c75;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: #f11;
+    margin-top: 10px;
+    line-height: 20px;
+    text-indent: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo-do-site .txt-topo-site p span {
+    color: #351c75;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*DIVISÓRIA*/
+.divisoria h1 {
+    color: #f11;
+    text-align: center;
+}
+
+/*DIVISÓRIA*/
+
+/*ESTILO DOS PROJETOS VISUAL*/
+
+section.portfolio {
+    padding: 40px 4%;
+}
+
+.portfolio .interface {
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #f11;
+    padding: 50px;
+}
+
+.portfolio .interface h3 {
+    color: #f11;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.portfolio .interface h3 span {
+    color: #351c75;
+}
+
+.caret {
+    display: inline-block;
+    width: 2px;
+    height: .8em;
+    background-color: #f11;
+    margin-left: 4px;
+    animation: piscar 1s steps(1) infinite;
+}
+
+@keyframes piscar {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 0% 100%;
+    transition: 2s;
+    cursor: pointer;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 0%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 900;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.541);
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/*FIM ESTILO DOS PROJETOS VISUAL*/
+
+/*COMEÇO RODAPE*/
+
+footer {
+    padding: 40px 4%;
+    background-color: rgb(24, 24, 24);
+    margin-top: 40px;
+}
+
+footer .flex {
+    align-content: center;
+    text-align: justify;
+    justify-content: space-around;
+    color: white;
+}
+
+.container-rdp .imp {
+    justify-content: space-around;
+    margin: 25px;
+    align-content: center;
+}
+
+.container-rdp .email {
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.container-rdp .email:hover {
+    cursor: pointer;
+    color: #f11;
+    transition: 1s;
+}
+
+.container-rdp img {
+    height: 100px;
+    width: auto;
+}
+
+footer .anticopyright {
+    border-top: 1px solid white;
+    color: rgb(97, 97, 97);
+    text-align: center;
+    margin-top: 25px;
+}
+
+footer .anticopyright p span {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+footer .anticopyright p {
+    padding: 10px;
+    margin-top: 25px;
+    transition: all .2s ease-in-out;
+}
+
+footer .anticopyright p:hover {
+    cursor: pointer;
+    color: #f11;
+    transition: 1s;
+}
+
+/*FIM RODAPE*/
