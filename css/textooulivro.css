@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif; 
+    font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -11,47 +11,57 @@ main {
     margin: auto;
 }
 
-section.topo-da-livrelivro{
+section.topo-da-livrelivro {
     text-align: justify;
 }
 
 .topo-da-livrelivro .txtlivrelivro {
     margin: 200px;
     padding: 15px;
-    text-indent: 2em;
-    color: #f11;
+    color: #351c75;
 }
 
-.txtlivrelivro h3{
+.txtlivrelivro h3 {
     color: #351c75;
     font-style: italic;
     font-size: x-large;
 }
 
-.txtlivrelivro h3 span{
+.txtlivrelivro h3 span {
     color: #f11;
     font-weight: 100;
     font-style: normal;
     font-size: large;
 }
 
-.txtlivrelivro p{
+.txtlivrelivro p {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
     margin-top: 15px;
+    text-indent: 5em;
 }
 
-.txtlivrelivro p.capt{
+.txtlivrelivro p.capt {
     font-weight: 700;
-    text-indent: 2em;
+    text-indent: 5em;
     margin-top: 50px;
     margin-bottom: 15px;
 }
 
-.txtlivrelivro p.citac{
-    border-left: 15px solid #f11;
+.txtlivrelivro p.citac {
     font-size: 90%;
-    margin-left: 500px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-left: 15rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.txtlivrelivro p.corpo span.refbib {
+    color: #f11;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.txtlivrelivro p.corpo span.italicAUTO {
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
 }
