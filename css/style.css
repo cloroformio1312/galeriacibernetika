@@ -55,7 +55,7 @@ nav.menupc a:hover {
     color: white;
     background-color: #f11;
     border: 3px #f11;
-    border-radius: 100%;
+    scale: 0.9;
     transition: 0.2s;
 }
 
@@ -127,7 +127,7 @@ header nav ul li {
 .menumobile ul li a:hover {
     background-color: #f11;
     color: white;
-    scale: 90%;
+    scale: 0.9;
     transition: 0.2s;
 }
 

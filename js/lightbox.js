@@ -3,8 +3,9 @@ const popupImg = document.getElementById("popup-img");
 const popupCaption = document.getElementById("popup-caption");
 const fechar = document.querySelector(".fechar");
 
-document.querySelectorAll(".img-topo-site img").forEach(img => {
-  img.addEventListener("click", () => {
+document.querySelectorAll(".lightbox-img").forEach(img => {
+  img.addEventListener("click", (e) => {
+    e.preventDefault();
     popupImg.src = img.src;
     popupCaption.textContent = img.dataset.caption || img.alt;
     popup.classList.add("ativo");
@@ -30,3 +31,5 @@ document.addEventListener("keydown", e => {
     fecharPopup();
   }
 });
+
+
