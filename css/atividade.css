@@ -75,6 +75,13 @@ section.primeiraact .bloco {
     color: #f11;
 }
 
+.primeiraact p.caption {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 4px;
+    color: #f11;
+}
+
 .primeiraact p#espaçoacima {
     border-top: 1px solid #f11;
     padding-top: 15px;
