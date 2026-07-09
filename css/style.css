@@ -15,7 +15,6 @@
 
 body {
     background-color: white;
-    height: 100vh;
 }
 
 .interface {
@@ -43,20 +42,19 @@ header>.interface {
 
 nav.menupc a {
     color: #f11;
-    background-color: white;
+    background-color: transparent;
     text-decoration: none;
     padding: 10px 25px;
     display: inline-block;
-    transition: all 0.2s ease-in-out;
+    transition: ease .5s;
     border: 1px solid #f11;
 }
 
 nav.menupc a:hover {
     color: white;
     background-color: #f11;
-    border: 3px #f11;
-    scale: 0.9;
-    transition: 0.2s;
+    scale: 95%;
+    transition: ease .5s;
 }
 
 #cloroformio {

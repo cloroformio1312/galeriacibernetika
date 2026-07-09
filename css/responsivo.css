@@ -232,8 +232,8 @@
         margin-bottom: 15px;
     }
 
-    .video-container {
-        width: 310px;
-        height: 664px
+    .videobox {
+        max-width: 320;
+        aspect-ratio: 9/16;
     }
 }

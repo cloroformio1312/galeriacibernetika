@@ -87,13 +87,14 @@ section.sessao .flex {
     height: 460px;
     background-size: cover;
     background-position: 0% 100%;
-    transition: 2s;
+    transition: ease 3s;
     cursor: pointer;
     position: relative;
 }
 
 .img-act:hover {
     background-position: 100% 0%;
+    transition: ease 2s;
 }
 
 .overlay {
@@ -109,7 +110,7 @@ section.sessao .flex {
     font-style: italic;
     font-weight: 900;
     color: white;
-    background-color: #351c75d0;
+    background-color: rgba(22, 22, 22, 0.575);
     opacity: 0;
     transition: .5s;
 }

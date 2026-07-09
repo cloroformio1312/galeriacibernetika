@@ -1,3 +1,52 @@
+.ITEM-OBRA {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    cursor: pointer;
+    transition: ease .5s;
+}
+
+
+.ITEM-OBRA:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: ease .5s;
+}
+
+
+.ITEM-OBRA img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.OVERLAY-PG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .8), rgba(0, 0, 0, .4));
+    padding: 10px;
+    opacity: 0;
+    transition: 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ITEM-OBRA:hover .OVERLAY-PG {
+    opacity: 1;
+}
+
+.pg-titulo {
+    color: #f8f8f8;
+    font-size: 13px;
+    margin: 0;
+    line-height: 1.4;
+}
+
 .primeiraact {
     padding: 40px 4%;
 }
@@ -14,6 +63,33 @@ section.primeiraact .bloco {
 .primeiraact .imagensact {
     display: flex;
     gap: 15px;
+    transition: ease .5s;
+}
+
+.imagensact img:hover {
+    scale: 99%;
+    transition: ease .5s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.video-container {
+    width: 100%;
+}
+
+.videobox {
+    position: relative;
+    max-width: 1180px;
+    aspect-ratio: 16 / 9;
+    margin: 0 auto;
+}
+
+.videobox iframe{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: solid 1px #f11;
+    display: block;
 }
 
 .masonry-col {
@@ -28,12 +104,6 @@ section.primeiraact .bloco {
     height: auto;
     border: 1px solid #f11;
     transition: .3s ease;
-}
-
-
-.imagensact img:hover {
-    transform: scale(1.01);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .primeiraact .imagensact a {
@@ -90,3 +160,31 @@ section.primeiraact .bloco {
     width: 60%;
 }
 
+section.primeiraact .bloco.bloco-texto {
+    max-width: 950px;
+}
+
+.texto1acao .titulo-pdf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.vPDF {
+    color: #f11;
+    background-color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    transition: ease .3s;
+    border: 1px solid #f11;
+    cursor: pointer;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+.vPDF:hover {
+    color: white;
+    background-color: #f11;
+    transition: ease .3s;
+}

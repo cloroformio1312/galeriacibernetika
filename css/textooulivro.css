@@ -31,22 +31,21 @@ section.topo-da-livrelivro {
     color: #351c75;
 }
 
-.txtlivrelivro .vPDF {
+.vPDF {
     color: #f11;
     background-color: white;
     text-decoration: none;
     padding: 5px 15px;
-    transition: all 0.2s ease-in-out;
+    transition: ease .3s;
     border: 1px solid #f11;
     cursor: pointer;
-    width: 110px;
-    height: auto;
+    font-size: 12px;
 }
 
-.txtlivrelivro .vPDF:hover {
+.vPDF:hover {
     color: white;
     background-color: #f11;
-    transition: 0.2s;
+    transition: ease .3s;
 }
 
 
